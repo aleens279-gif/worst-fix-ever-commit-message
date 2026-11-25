@@ -1,11 +1,11 @@
-// Worst Fix Ever: Funniest Commit Message — writes one line to /output/entry.txt
-// Gate: 63 chars (max 100), one line, no trailing newline.
+// Worst Fix Ever: Funniest Commit Message — one-line entry
+// Limit: 63 of 100 chars, single line, no trailing newline.
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const PARTS = [
-  "fix: resolved the crash",
-  "by making the whole",
-  "feature unreachable",
+  "fix: resolved the crash by making",
+  "the whole feature",
+  "unreachable",
 ];
 
 const LINE = PARTS.join(" ");
